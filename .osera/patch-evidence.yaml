@@ -1,7 +1,7 @@
 # Licensed under the Apache License, Version 2.0: https://www.apache.org/licenses/LICENSE-2.0
 schema: osera-patch-evidence/0.1.0
 producer: moderne
-release: 2.19.4.1-osera-00022
+release: 2.19.4.1-osera-00023
 baseline: v2.19.4+patch.baseline
 fixes:
   - cve: CVE-2026-18401
@@ -210,9 +210,9 @@ fixes:
       - com.fasterxml.jackson.jr:jackson-jr-all
     note: Carried from 2.19.4.1-backpatch-00021; ported onto 2.19.4; fixed at 2.19.4.1-backpatch-00021 (backpatch-jackson-core@36b04e7).
 tests:
-  commit: e0701014c3245eddcd9c73bcaead5ec0d810685b
+  commit: 9949797b22635183013ebeadc5edfa32dd34274d
   command: none in this repository
   runtime: none, no build or test ran for this release
   report: carried, see the evidence of the release named in the note
   result: pass
-  note: "this release is a tooling update, it carries no new fix, nothing ran here; its test provenance is tooling-2026-11-03-jackson-2.19: a tooling update of moderne-backpatch-alliance/backpatch-jackson-bom at v2.19.4.1-backpatch-00021, whose .backpatch/patch-evidence.yaml says what ran"
+  note: "this release is a tooling update, it carries no new fix, nothing ran here; its test provenance is tooling-2026-11-05-jackson-2.19: a tooling update of moderne-backpatch-alliance/backpatch-jackson-bom at v2.19.4.1-backpatch-00022, whose .backpatch/patch-evidence.yaml says what ran"
